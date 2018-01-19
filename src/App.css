@@ -1,0 +1,201 @@
+@-webkit-keyframes up-position {
+  from { background-color: green; }
+  to { background-color: inherit; }
+}
+@-moz-keyframes up-position {
+  from { background-color: green; }
+  to { background-color: inherit; }
+}
+@-o-keyframes up-position {
+  from { background-color: green; }
+  to { background-color: inherit; }
+}
+@keyframes up-position {
+  0% { background-color: inherit;; }
+  50% { background-color: green; }
+  100% { background-color: inherit;}
+}
+.up-position {
+  -webkit-animation: up-position 5s infinite 1s normal; /* Safari 4+ */
+  -moz-animation:    up-position 5s infinite 1s normal; /* Fx 5+ */
+  -o-animation:      up-position 5s infinite 1s normal; /* Opera 12+ */
+  animation:         up-position 5s infinite 1s normal; /* IE 10+ */
+}
+
+@-webkit-keyframes down-position {
+  from { background-color: red; }
+  to { background-color: inherit; }
+}
+@-moz-keyframes down-position {
+  from { background-color: red; }
+  to { background-color: inherit; }
+}
+@-o-keyframes down-position {
+  from { background-color: red; }
+  to { background-color: inherit; }
+}
+@keyframes down-position {
+  from { background-color: red; }
+  to { background-color: inherit; }
+}
+.down-position {
+  -webkit-animation: down-position 5s infinite 1s normal; /* Safari 4+ */
+  -moz-animation:    down-position 5s infinite 1s normal; /* Fx 5+ */
+  -o-animation:      down-position 5s infinite 1s normal; /* Opera 12+ */
+  animation:         down-position 5s infinite 1s normal; /* IE 10+ */
+}
+
+@font-face {
+    font-family: 'si';
+    src: url('icons/socicon.eot');
+    src: url('icons/socicon.eot?#iefix') format('embedded-opentype'),
+         url('icons/socicon.woff') format('woff'),
+         url('icons/socicon.ttf') format('truetype'),
+         url('icons/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(icons/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; margin-top: 5px; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    color: #ffffff;
+    background-color: none;
+}
+
+.soc a:hover {
+    z-index: 2;
+
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-twitter:before {
+    content:'\e040';
+}
+.soc-facebook {
+    background-color: #3e5b98;
+}
+.soc-facebook:before {
+    content:'\e041';
+}
+.soc-googleplus {
+    background-color: #dd4b39;
+}
+.soc-googleplus:before {
+    content:'\e042';
+}
+.soc-pinterest {
+    background-color: #c92619;
+}
+.soc-pinterest:before {
+    content:'\e043';
+}
+.soc-linkedin {
+    background-color: #3371b7;
+}
+.soc-linkedin:before {
+    content:'\e049';
+}
+.soc-rss {
+    background-color: #f26109;
+}
+.soc-rss:before {
+    content:'\e00b';
+}
+.soc-youtube {
+    background-color: #e02a20;
+}
+.soc-youtube:before {
+    content:'\e051';
+}
+
+.soc-twitter:hover {
+    background-color: #61bbf2;
+}
+.soc-facebook:hover {
+    background-color: #526fac;
+}
+.soc-googleplus:hover {
+    background-color: #f15f4d;
+}
+.soc-pinterest:hover {
+    background-color: #dd3a2d;
+}
+.soc-linkedin:hover {
+    background-color: #4785cb;
+}
+.soc-rss:hover {
+    background-color: #ff751d;
+}
+.soc-youtube:hover {
+    background-color: #f43e34;
+}
+.soc-persona {
+    background-color: #e6753d;
+}
+.soc-persona:before {
+    content:'\e008';
+}
+
+.soc-persona:hover {
+    background-color: #fa8951;
+}
