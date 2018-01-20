@@ -211,7 +211,7 @@ class TimingRow extends Component {
           {name}
         </td>
         <td>
-          {secondsToHms(this.props.data.g)}
+          {secondsToHms(this.props.data.cg)}
         </td>
         <td>
           {secondsToHms(this.props.rel)}
